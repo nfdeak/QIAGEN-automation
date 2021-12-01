@@ -22,7 +22,7 @@ public class Exercise {
             Arrays.sort(charArray2);
 
             // if sorted char arrays are same
-            // then the string is anagram
+            // then the string is anagra m
             return  Arrays.equals(charArray1, charArray2);
         }
         return false;
