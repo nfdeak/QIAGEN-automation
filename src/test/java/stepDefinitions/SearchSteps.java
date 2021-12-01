@@ -94,7 +94,7 @@ public class SearchSteps extends Base {
         Date currentDate = new Date();
         LocalDateTime localDateTimeCurrentDay = currentDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
         LocalDateTime localDateTimeNextDay = localDateTimeCurrentDay.plusDays(1);
-        LocalDateTime localDateTimeNextDayPlus20Days= localDateTimeNextDay.plusDays(Integer.parseInt(nDay));
-        return String.valueOf(localDateTimeNextDayPlus20Days.getDayOfMonth());
+        LocalDateTime localDateTimeNextDayPlusNDays= localDateTimeNextDay.plusDays(Integer.parseInt(nDay));
+        return String.valueOf(localDateTimeNextDayPlusNDays.getDayOfMonth());
     }
 }
