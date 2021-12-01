@@ -33,6 +33,7 @@ public class Base {
         driver = WebDriverFactory.createWebDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().deleteAllCookies();
+        wait = new WebDriverWait(driver, 10);
         return driver;
     }
 
